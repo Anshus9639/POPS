@@ -41,13 +41,17 @@ export const site = {
   heroIntro:
     "I help teams find the right people and keep the everyday HR machinery running smoothly — with a lot of warmth and a little chatpati spice.",
   about: [
-    "Hi, I'm Priyanka, or SUSH to the people who know me best. I'm from Kolkata and building my career in Gurugram as an HR Executive at Radical Mind Technology, where I handle recruitment and day-to-day HR operations.",
-    "With an MBA in HR, I'm drawn to the people side of business: finding the right talent and making work a better place to be. I want to keep growing in the HR field and build the kind of workplaces people are glad to walk into.",
+    "Hi, I'm Priyanka, or SUSH to the people who know me best. I'm from Kolkata and building my HR career in Gurugram at Radical Mind Technology, where I work in recruitment and day-to-day HR operations.",
+    "My education includes an MBA in Human Resources from Chandigarh Group of Colleges, a BBA in Human Resources from Andhra University, and schooling at DAC Public School in Kolkata. I'm drawn to the people side of business and want to help build workplaces people are glad to walk into.",
     "Off the clock, I'm chatpati at heart, with a soft spot for cats.",
   ],
   traits: ["Chatpati", "Cat lover"],
   highlights: [
-    { label: "Education", value: "MBA in HR" },
+    {
+      label: "Education",
+      value:
+        "MBA in Human Resources · Chandigarh Group of Colleges\nBBA in Human Resources · Andhra University\nSchooling · DAC Public School, Kolkata",
+    },
     { label: "Currently", value: "HR Executive, Radical Mind Technology" },
     { label: "Based in", value: "Gurugram · from Kolkata" },
   ],
@@ -69,13 +73,12 @@ export const site = {
     linkedin: "https://www.linkedin.com/in/priyanka-hembram-6778282bb",
     instagram: "https://www.instagram.com/sushmita.yaaar",
     instagramHandle: "@sushmita.yaaar",
-    email: "", // e.g. "name@example.com" — shows an Email button when filled in
+    email: "priyankahembram47704@gmail.com",
   },
 
   /**
-   * Newest first. Add, remove or reorder entries freely.
-   * To add undergraduate / school details later, copy an entry below,
-   * set type to "education" and fill in the text.
+   * Dated entries are ordered by most recent start date; undated education
+   * entries follow in academic order until years are available.
    */
   timeline: [
     {
@@ -86,6 +89,15 @@ export const site = {
       organisation: "Radical Mind Technology · Gurugram",
       description:
         "Handling recruitment and a wide range of day-to-day HR operations.",
+    },
+    {
+      id: "tech-mahindra",
+      type: "work",
+      period: "Jan 2025 — Jul 2025",
+      title: "HR Executive",
+      organisation: "Tech Mahindra",
+      description:
+        "Worked as an HR Executive at Tech Mahindra from January 2025 to July 2025.",
     },
     {
       id: "hometrust",
@@ -103,6 +115,23 @@ export const site = {
       organisation: "Chandigarh Group of Colleges, Jhanjheri",
       description:
         "Postgraduate study focused on human resource management.",
+    },
+    {
+      id: "bba",
+      type: "education",
+      period: "Undergraduate",
+      title: "BBA in Human Resources",
+      organisation: "Andhra University · Visakhapatnam (Vizag), Andhra Pradesh",
+      description: "Bachelor of Business Administration in Human Resources.",
+    },
+    {
+      id: "dac-public-school",
+      type: "education",
+      period: "School Education",
+      title: "School Education",
+      organisation: "DAC Public School · Kolkata, West Bengal",
+      description:
+        "School education at DAC Public School in Kolkata, West Bengal.",
     },
   ] satisfies TimelineEntry[],
 

@@ -61,7 +61,12 @@ export function Footer() {
               </a>
             )}
             {email && (
-              <a href={`mailto:${email}`} aria-label="Email" className={iconLink}>
+              <a
+                href={`mailto:${email}`}
+                aria-label={`Email ${email}`}
+                title={email}
+                className={iconLink}
+              >
                 <Mail className="h-5 w-5" aria-hidden="true" />
               </a>
             )}

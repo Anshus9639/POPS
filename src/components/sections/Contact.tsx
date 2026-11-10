@@ -58,7 +58,12 @@ export function Contact() {
               className={`${buttonBase} border border-blush-300 bg-white text-rose-700 hover:border-rose-400 hover:shadow-soft`}
             >
               <Mail className="h-5 w-5" aria-hidden="true" />
-              Email me
+              <span className="min-w-0 text-left sm:text-center">
+                <span className="block">Email Me</span>
+                <span className="mt-1 block break-all text-xs font-normal">
+                  {email}
+                </span>
+              </span>
             </a>
           )}
         </Reveal>

@@ -74,7 +74,7 @@ export function About() {
                   <dt className="text-[0.7rem] font-semibold uppercase tracking-[0.2em] text-mauve-500">
                     {h.label}
                   </dt>
-                  <dd className="mt-2 font-display text-lg leading-snug text-ink">
+                  <dd className="mt-2 whitespace-pre-line font-display text-lg leading-snug text-ink">
                     {h.value}
                   </dd>
                 </div>
