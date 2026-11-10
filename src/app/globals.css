@@ -1,0 +1,165 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------
+   Design tokens — light blush-pink editorial palette
+   ------------------------------------------------------------------ */
+@theme {
+  --color-cream: #fffaf8;
+  --color-blush-50: #fff4f5;
+  --color-blush-100: #fde9ec;
+  --color-blush-200: #fadbe1;
+  --color-blush-300: #f4c3cd;
+  --color-pastel-400: #eda9b8;
+
+  --color-rose-400: #dd8aa0;
+  --color-rose-500: #d0708a;
+  --color-rose-600: #b04862; /* text + primary buttons (AA on white/cream) */
+  --color-rose-700: #94374f;
+
+  --color-mauve-300: #cdb3be;
+  --color-mauve-500: #86616f;
+  --color-mauve-700: #6b4a5b;
+
+  --color-champagne-200: #f1e3cc;
+  --color-champagne-400: #d8b98a;
+  --color-champagne-600: #8f6d3a;
+
+  --color-ink: #2b2428;
+  --color-ink-soft: #5b4f55;
+
+  --font-display: "Fraunces Variable", Georgia, "Times New Roman", serif;
+  --font-sans: "DM Sans Variable", ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", Roboto, sans-serif;
+
+  --shadow-soft: 0 12px 40px -14px rgba(176, 72, 98, 0.22);
+  --shadow-lift: 0 22px 50px -18px rgba(176, 72, 98, 0.32);
+  --shadow-card: 0 2px 4px rgba(107, 74, 91, 0.04),
+    0 10px 30px -12px rgba(176, 72, 98, 0.16);
+
+  --animate-drift: drift 22s ease-in-out infinite alternate;
+  --animate-drift-slow: drift 34s ease-in-out infinite alternate-reverse;
+  --animate-petal: petal 16s linear infinite;
+  --animate-shimmer: shimmer 8s ease-in-out infinite;
+
+  @keyframes drift {
+    0% {
+      transform: translate3d(0, 0, 0) scale(1);
+    }
+    100% {
+      transform: translate3d(40px, -30px, 0) scale(1.12);
+    }
+  }
+  @keyframes petal {
+    0% {
+      transform: translate3d(0, -10vh, 0) rotate(0deg);
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.8;
+    }
+    90% {
+      opacity: 0.6;
+    }
+    100% {
+      transform: translate3d(60px, 105vh, 0) rotate(300deg);
+      opacity: 0;
+    }
+  }
+  @keyframes shimmer {
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--color-blush-300);
+  color: var(--color-ink);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  letter-spacing: -0.015em;
+  line-height: 1.1;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-rose-600);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+section[id] {
+  scroll-margin-top: 5.5rem;
+}
+
+/* Soft animated gradient used behind the hero + contact */
+.gradient-wash {
+  background: linear-gradient(
+    120deg,
+    var(--color-blush-50),
+    var(--color-blush-100),
+    var(--color-blush-200) 55%,
+    var(--color-champagne-200) 85%,
+    var(--color-blush-50)
+  );
+  background-size: 220% 220%;
+  animation: var(--animate-shimmer);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+/* Elegant editorial divider */
+.hairline {
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-blush-300),
+    transparent
+  );
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .decor-motion {
+    display: none !important;
+  }
+}

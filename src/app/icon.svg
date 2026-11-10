@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="18" fill="#fffaf8" />
+  <rect x="1.5" y="1.5" width="61" height="61" rx="16.5" fill="none" stroke="#d0708a" stroke-opacity=".48" stroke-width="1.5" />
+  <text x="50%" y="54%" fill="#94374f" font-family="Georgia, 'Times New Roman', serif" font-size="24" font-weight="600" letter-spacing="-2" text-anchor="middle" dominant-baseline="middle">PH</text>
+  <circle cx="49" cy="48" r="3" fill="#d8b98a" />
+</svg>
