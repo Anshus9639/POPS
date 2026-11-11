@@ -276,11 +276,11 @@ export const site = {
       height: 1246,
     },
     {
-      src: "/images/gallery-monument.jpg",
-      alt: "Priyanka in a blue top smiling at dusk with historic stone pillars behind her",
-      caption: "Golden hour",
-      width: 720,
-      height: 896,
+      src: "/images/gallery-evening.jpg",
+      alt: "Priyanka in a blue top posing at night in a historic courtyard with stone pillars and trees behind her",
+      caption: "Evening memories",
+      width: 755,
+      height: 1334,
     },
     {
       src: "/images/gallery-festive.jpg",

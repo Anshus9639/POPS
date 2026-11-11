@@ -141,7 +141,15 @@ export function Navbar() {
                   <li key={link.href}>
                     <a
                       href={link.href}
-                      onClick={() => setOpen(false)}
+                      onClick={() => {
+                        document.body.style.overflow = "";
+                        setOpen(false);
+                        window.setTimeout(() => {
+                          document
+                            .getElementById(link.href.slice(1))
+                            ?.scrollIntoView();
+                        }, 0);
+                      }}
                       aria-current={isActive ? "true" : undefined}
                       className={`block rounded-2xl px-4 py-3.5 font-display text-2xl transition-colors hover:bg-blush-100 hover:text-rose-700 ${
                         isActive ? "bg-blush-100 text-rose-700" : "text-ink"
