@@ -42,7 +42,7 @@ export const site = {
     "I help teams find the right people and keep the everyday HR machinery running smoothly — with a lot of warmth and a little chatpati spice.",
   about: [
     "Hi, I'm Priyanka, or SUSH to the people who know me best. I'm from Kolkata and building my HR career in Gurugram at Radical Mind Technology, where I work in recruitment and day-to-day HR operations.",
-    "My education includes an MBA in Human Resources from Chandigarh Group of Colleges, a BBA in Human Resources from Andhra University, and schooling at DAC Public School in Kolkata. I'm drawn to the people side of business and want to help build workplaces people are glad to walk into.",
+    "My education includes an MBA in Human Resources from Chandigarh Group of Colleges, a BBA in Human Resources from Andhra University, and schooling at DAV Public School in Kolkata. I'm drawn to the people side of business and want to help build workplaces people are glad to walk into.",
     "Off the clock, I'm chatpati at heart, with a soft spot for cats.",
   ],
   traits: ["Chatpati", "Cat lover"],
@@ -50,7 +50,7 @@ export const site = {
     {
       label: "Education",
       value:
-        "MBA in Human Resources · Chandigarh Group of Colleges\nBBA in Human Resources · Andhra University\nSchooling · DAC Public School, Kolkata",
+        "MBA in Human Resources · Chandigarh Group of Colleges\nBBA in Human Resources · Andhra University\nSchooling · DAV Public School, Kolkata",
     },
     { label: "Currently", value: "HR Executive, Radical Mind Technology" },
     { label: "Based in", value: "Gurugram · from Kolkata" },
@@ -77,8 +77,7 @@ export const site = {
   },
 
   /**
-   * Dated entries are ordered by most recent start date; undated education
-   * entries follow in academic order until years are available.
+   * Entries are ordered by most recent start date (newest first).
    */
   timeline: [
     {
@@ -119,19 +118,19 @@ export const site = {
     {
       id: "bba",
       type: "education",
-      period: "Undergraduate",
+      period: "2020 — 2023",
       title: "BBA in Human Resources",
       organisation: "Andhra University · Visakhapatnam (Vizag), Andhra Pradesh",
       description: "Bachelor of Business Administration in Human Resources.",
     },
     {
-      id: "dac-public-school",
+      id: "dav-public-school",
       type: "education",
-      period: "School Education",
+      period: "2019 — 2020",
       title: "School Education",
-      organisation: "DAC Public School · Kolkata, West Bengal",
+      organisation: "DAV Public School · Kolkata, West Bengal",
       description:
-        "School education at DAC Public School in Kolkata, West Bengal.",
+        "School education at DAV Public School in Kolkata, West Bengal.",
     },
   ] satisfies TimelineEntry[],
 
